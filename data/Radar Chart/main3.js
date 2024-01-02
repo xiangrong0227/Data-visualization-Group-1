@@ -1,6 +1,6 @@
 
-myGraph=document.getElementById('myGraph');
-data = [
+myGraph3=document.getElementById('myGraph3');
+data3 = [
     {
     type: 'scatterpolar',
     r: [15, 7, 1.5, 5.5, 1, 4.5, 3],
@@ -17,7 +17,7 @@ data = [
     }
   ]
   
-  layout = {
+  layout3 = {
     polar: {
       radialaxis: {
         visible: true,
@@ -26,5 +26,5 @@ data = [
     }
   }
   
-  Plotly.newPlot(myGraph, data, layout)
+  Plotly.newPlot(myGraph3, data3, layout3)
   

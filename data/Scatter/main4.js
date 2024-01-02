@@ -1,6 +1,6 @@
-let myGraph = document.getElementById('myGraph');
+let myGraph4 = document.getElementById('myGraph4');
 
-var trace1 = {
+var trace3 = {
     x: ['18y', '19y', '20y', '21y'],
     y:[2203.2, 2596.02, 1454.35, 1927.28],
     name: "大學生身體活動量",
@@ -26,10 +26,10 @@ var trace1 = {
 
 
 
-let data = [];
-data.push(trace1);
+let data4 = [];
+data4.push(trace3);
 
-let layout = {
+let layout4 = {
     margin:{
         t:50
     },
@@ -38,4 +38,4 @@ let layout = {
 
 };
 
-Plotly.newPlot(myGraph, data, layout);
+Plotly.newPlot(myGraph4, data4, layout4);

@@ -1,4 +1,4 @@
-let myGraph = document.getElementById('myGraph');
+let myGraph0 = document.getElementById('myGraph0');
 
 let sleep1 = {};
 sleep1.type = "bar";
@@ -54,14 +54,14 @@ sleep3.textfont = {
     size: 18
 };
 
-let data = [];
-data.push(sleep1);
-data.push(sleep2);
-data.push(sleep3);
+let data0 = [];
+data0.push(sleep1);
+data0.push(sleep2);
+data0.push(sleep3);
 
 
 
-let layout = {
+let layout0 = {
     title: {
         text: '民國106-109年各年齡層工作/上學日平均睡眠時間',
         font: { size: 20},
@@ -92,4 +92,4 @@ let layout = {
         t: 50, // 上邊距
     }
 };
-Plotly.newPlot(myGraph, data, layout);
+Plotly.newPlot(myGraph0, data0, layout0);

@@ -1,4 +1,4 @@
-let myGraph = document.getElementById('myGraph');
+let myGraph1 = document.getElementById('myGraph1');
 
 function unpack(rows, key){
     return rows.map(function(row){
@@ -45,10 +45,10 @@ color:'white',
 size: 15
 };
 
-let data = [tracemap];
+let data1 = [tracemap];
     
 
-let layout ={
+let layout1 ={
     title: {
         text: '111年台灣各縣市民眾BMI分類屬於過重或肥胖的比例',
         font: { size: 20},
@@ -71,6 +71,6 @@ let layout ={
         zoom:5.5
     },
     
-};Plotly.newPlot(myGraph, data, layout)
+};Plotly.newPlot(myGraph1, data1, layout1)
 
 

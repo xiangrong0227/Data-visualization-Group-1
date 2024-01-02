@@ -1,4 +1,4 @@
-let myGraph=document.getElementById('myGraph');
+let myGraph2=document.getElementById('myGraph2');
 let trace1={};
 trace1.type="pie";
 trace1.title="男性";
@@ -34,10 +34,10 @@ for (let x=0;x<female.length;x++){
     trace2.values[x]=female[x]['count'];
 }
 
-let data=[];
-data.push(trace1);
-data.push(trace2);
-let layout={
+let data2=[];
+data2.push(trace1);
+data2.push(trace2);
+let layout2={
     margin:{
         t:30,
         l:0,
@@ -48,4 +48,4 @@ let layout={
     },
     title:"2017-2020 年 19-30 歲男性女性各BMI區間比率分佈"
 };
-Plotly.newPlot(myGraph,data,layout);
+Plotly.newPlot(myGraph2,data2,layout2);
