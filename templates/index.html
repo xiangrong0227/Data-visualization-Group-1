@@ -308,7 +308,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
+          <h2>視覺化資料</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
@@ -365,12 +365,51 @@
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
           <h2>檢視您的健康</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
-
+        <div class="card">
+          <h1>問卷調查</h1>
+          <form action="/submit" method="post" enctype="multipart/form-data">
+              <label for="gender">性別 :</label>
+              <input type="radio" id="gender" name="gender" value="Male" ><label for="Male">男生</label>
+              <input type="radio" id="gender" name="gender" value="Female" ><label for="Female">女生</label>
+  
+              <br><br>
+  
+              <label for="BMI">BMI：</label>
+              <input type="radio" id="BMI" name="BMI" value="25"><label for="25">BMI<24 </label>
+              <input type="radio" id="BMI" name="BMI" value="55"><label for="55">24<=BMI<27 </label>
+              <input type="radio" id="BMI" name="BMI" value="85"><label for="85">27<=BMI<30 </label>
+              <input type="radio" id="BMI" name="BMI" value="85"><label for="85"> 30<=BMI<35 </label>
+              <input type="radio" id="BMI" name="BMI" value="85"><label for="85">BMI>=35 </label>
+  
+              <br><br>
+  
+              <label for="hours">平均睡眠時間:</label>
+              <input type="radio" id="hours" name="hours" value="4"><label for="4">小於6小時</label>
+              <input type="radio" id="hours" name="hours" value="6"><label for="6">約6小時</label>
+              <input type="radio" id="hours" name="hours" value="7"><label for="7">約7小時</label>
+              <input type="radio" id="hours" name="hours" value="8"><label for="8">約8小時</label>
+              <input type="radio" id="hours" name="hours" value="10"><label for="10">多於8小時</label>
+  
+              <br><br>
+  
+              <label for="activity">身體活動量:</label>
+              <input type="number" name="activity">
+  
+              <br><br>
+  
+              <input type="submit" value="submit">
+          </form>
+  
+          <br>
+  
+          <div>
+              <p>{{confirm}}</p>
+          </div>
+      </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-teal">

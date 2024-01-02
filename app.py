@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/') 
 def formPage():
-    return render_template('form.html')
+    return render_template('index.html')
 
 @app.route("/submit", methods=['POST'])
 def submit():
@@ -13,16 +13,16 @@ def submit():
         form_data = request.form
         new_data = {
             "gender": form_data['gender'],
-            "age":form_data['age'],
-            "area": form_data['area'],
-            "food":form_data['food']
+            "BMI":form_data['BMI'],
+            "hours": form_data['hours'],
+            "activity":form_data['activity']
         }
         params = {}
         url = "http://localhost:3000/records"
         result = requests.post(url, params=params, json=new_data)
         print(result.status_code)
         print(result.content)
-        return render_template('form.html', confirm = "上傳成功")
+        return render_template('index.html', confirm = "上傳成功")
  
 if __name__ == "__main__":
     app.run()
