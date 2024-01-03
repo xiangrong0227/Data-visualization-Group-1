@@ -1,0 +1,11 @@
+{
+  "records": [
+    {
+      "gender": "Male",
+      "BMI": "55",
+      "hours": "6",
+      "activity": "2000",
+      "id": 1
+    }
+  ]
+}

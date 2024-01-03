@@ -43,9 +43,9 @@ sleep3.x = [];
 sleep3.y = [];
 sleep3.marker = { color:  'rgba(75, 192, 112, 0.9)'   } // 淺綠色
 
-for (let i = 0; i < sleeptime_age_female.length; i++) {
-    sleep3.x[i] = sleeptime_age_female[i]['age'];
-    sleep3.y[i] = sleeptime_age_female[i]['sleeptime'];
+for (let i = 0; i < sleeptime_age_whole.length; i++) {
+    sleep3.x[i] = sleeptime_age_whole[i]['age'];
+    sleep3.y[i] = sleeptime_age_whole[i]['sleeptime'];
 }
 
 sleep3.text = sleep3.y;
